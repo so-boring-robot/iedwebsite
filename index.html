@@ -6,154 +6,406 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>IED</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway+Dots">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alumni+Sans+Inline+One&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Angkor&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway+Dots&amp;display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
 <body class="d-flex flex-column h-100">
-    <div class="bg-body shadow d-flex flex-column flex-shrink-0 position-fixed top-0 bottom-0" id="mini-slidebar" style="width: 4.5rem;z-index: 3;"><a class="text-center link-body-emphasis d-block p-3 text-decoration-none border-bottom" href="/" title="" data-bs-placement="right" data-bs-original-title="Icon-only" data-bs-target="#offcanvas-menu" data-bs-toggle="offcanvas"><i class="fa fa-bars" style="font-size: 25px;"></i><span class="visually-hidden">Icon-only</span></a>
-        <ul class="nav nav-pills flex-column text-center nav-flush mb-auto">
-            <li class="nav-item"><a class="nav-link active link-light py-3 border-bottom rounded-0" href="#" aria-current="page" style="background: #c01616;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-buildings-fill">
-                        <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zM2 11h1v1H2zm2 0h1v1H4zm-1 2v1H2v-1zm1 0h1v1H4zm9-10v1h-1V3zM8 5h1v1H8zm1 2v1H8V7zM8 9h1v1H8zm2 0h1v1h-1zm-1 2v1H8v-1zm1 0h1v1h-1zm3-2v1h-1V9zm-1 2h1v1h-1zm-2-4h1v1h-1zm3 0v1h-1V7zm-2-2v1h-1V5zm1 0h1v1h-1z"></path>
-                    </svg></a></li>
-            <li class="nav-item"><a class="nav-link py-3 border-bottom rounded-0" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-list-task" style="color: #333333;">
-                        <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5zM3 3H2v1h1z"></path>
-                        <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1z"></path>
-                        <path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5zM2 7h1v1H2zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm1 .5H2v1h1z"></path>
-                    </svg></a></li>
-            <li class="nav-item"><a class="nav-link py-3 border-bottom rounded-0" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-clipboard2-fill" style="color: #c01616;">
-                        <path d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5z"></path>
-                        <path d="M3.5 1h.585A1.498 1.498 0 0 0 4 1.5V2a1.5 1.5 0 0 0 1.5 1.5h5A1.5 1.5 0 0 0 12 2v-.5c0-.175-.03-.344-.085-.5h.585A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1"></path>
-                    </svg></a></li>
-            <li class="nav-item"><a class="nav-link py-3 border-bottom rounded-0" href="#" style="color: #333333;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-question-circle-fill">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"></path>
-                    </svg></a></li>
-            <li class="nav-item"><a class="nav-link py-3 border-bottom rounded-0" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chat-left-dots-fill" style="color: #c01616;">
-                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
-                    </svg></a></li>
-            <li class="nav-item"><a class="nav-link py-3 border-bottom rounded-0" href="#" style="color: #333333;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-window-plus" style="color: #333333;">
-                        <path d="M2.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1M4 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"></path>
-                        <path d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"></path>
-                        <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5"></path>
-                    </svg></a></li>
-            <li class="nav-item"><a class="nav-link py-3 border-bottom rounded-0" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person-square" style="color: #c01616;">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
-                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"></path>
-                    </svg></a></li>
-        </ul>
-    </div>
-    <div class="offcanvas offcanvas-start bg-body" tabindex="-1" data-bs-backdrop="false" id="offcanvas-menu">
-        <div class="offcanvas-header"><a class="link-body-emphasis d-flex align-items-center me-md-auto mb-3 mb-md-0 text-decoration-none" href="/">
-                <div class="d-xl-flex flex-row justify-content-xl-start align-items-xl-center"><img src="assets/img/ied_logo.jpg" width="100"><span class="fs-4">IED - Université Paris 8</span></div>
-            </a><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button></div>
-        <div class="offcanvas-body d-flex flex-column justify-content-between pt-0">
-            <div>
-                <hr class="mt-0">
-                <ul class="nav nav-pills flex-column mb-auto">
-                    <li class="nav-item"><a class="nav-link active link-light" href="#" aria-current="page"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-buildings-fill me-2">
+    <nav class="navbar navbar-expand-md" style="background: #f8f9fa;">
+        <div class="container-fluid"><a class="navbar-brand" href="index.html"><img src="assets/img/ied_logo.jpg" width="200"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item m-1" style="border-bottom: 1px solid #2196f3 ;"><a class="nav-link active text-nowrap text-dark" href="institut.html" style="font-size: 16px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-buildings-fill">
                                 <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zM2 11h1v1H2zm2 0h1v1H4zm-1 2v1H2v-1zm1 0h1v1H4zm9-10v1h-1V3zM8 5h1v1H8zm1 2v1H8V7zM8 9h1v1H8zm2 0h1v1h-1zm-1 2v1H8v-1zm1 0h1v1h-1zm3-2v1h-1V9zm-1 2h1v1h-1zm-2-4h1v1h-1zm3 0v1h-1V7zm-2-2v1h-1V5zm1 0h1v1h-1z"></path>
-                            </svg><span style="color: var(--bs-nav-pills-link-active-color); background-color: var(--bs-nav-pills-link-active-bg);">Institut</span></a></li>
-                    <li class="nav-item"><a class="nav-link link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-list-task me-2">
+                            </svg>&nbsp;Institut</a></li>
+                    <li class="nav-item m-1" style="border-bottom: 1px solid #2196f3 ;"><a class="nav-link text-nowrap text-dark" style="font-size: 16px;" href="index.html#formations"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-list-task text-dark" style="color: #333333;">
                                 <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5zM3 3H2v1h1z"></path>
                                 <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1z"></path>
                                 <path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5zM2 7h1v1H2zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm1 .5H2v1h1z"></path>
-                            </svg><span style="color: RGBA(var(--bs-emphasis-color-rgb),var(--bs-link-opacity,.75));">Offre de formation</span></a></li>
-                    <li class="nav-item"><a class="nav-link link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-clipboard-fill me-2">
-                                <path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2"></path>
-                            </svg><span style="color: RGBA(var(--bs-emphasis-color-rgb),var(--bs-link-opacity,.75));">Candidature &amp; Inscription</span></a></li>
-                    <li class="nav-item"><a class="nav-link link-body-emphasis" href="#"><i class="icon ion-help-circled me-2"></i><span style="color: RGBA(var(--bs-emphasis-color-rgb),var(--bs-link-opacity,.75));">Information &amp; Scolarité</span></a></li>
-                    <li class="nav-item"><a class="nav-link link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chat-left-dots-fill me-2">
-                                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
-                            </svg><span style="color: RGBA(var(--bs-emphasis-color-rgb),var(--bs-link-opacity,.75));">FAQ</span></a></li>
-                    <li class="nav-item"><a class="nav-link link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-window-plus me-2">
+                            </svg>&nbsp;Offre de formations</a></li>
+                    <li class="nav-item m-1" style="border-bottom: 1px solid #2196f3 ;"><a class="nav-link text-nowrap text-dark" href="informations.html" style="font-size: 16px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-question-circle-fill">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"></path>
+                            </svg>&nbsp;Informations &amp; Scolarité</a></li>
+                    <li class="nav-item m-1" style="border-bottom: 1px solid #2196f3 ;"><a class="nav-link text-nowrap text-dark" href="information.html" style="font-size: 16px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-window-plus text-dark" style="color: #333333;">
                                 <path d="M2.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1M4 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"></path>
                                 <path d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"></path>
                                 <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5"></path>
-                            </svg><span style="color: RGBA(var(--bs-emphasis-color-rgb),var(--bs-link-opacity,.75));">Plateforme EAD : Moodle IED</span></a></li>
-                    <li class="nav-item"><a class="nav-link link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person-square me-2">
-                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
-                                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"></path>
-                            </svg><span style="color: RGBA(var(--bs-emphasis-color-rgb),var(--bs-link-opacity,.75));">Contact</span></a></li>
+                            </svg>&nbsp;Moodle IED</a></li>
+                    <li class="nav-item m-1" style="border-bottom: 1px solid #2196f3 ;"><a class="nav-link text-nowrap text-dark" href="#" style="font-size: 16px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search text-dark" style="color: #333333;">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+                            </svg>&nbsp;Unité de recherche IED</a></li>
                 </ul>
             </div>
-            <div>
-                <hr>
-                <div class="row">
-                    <div class="col"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-star">
-                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"></path>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-star">
-                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"></path>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-star">
-                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"></path>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-star">
-                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"></path>
+        </div>
+    </nav>
+    <header style="padding-bottom: 1em;">
+        <div style="width: 100%;height: 4em;">
+            <div class="d-flex justify-content-between" id="header" style="background: linear-gradient(135deg, #f8f9fa 0%, #f8f9fa 50%, rgba(255,255,255, 1) 50%, rgb(255,255,255, 1) 100%), var(--bs-body-bg);">
+                <div class="d-flex justify-content-center px-3" id="left-header"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-universal-access" style="margin-top: 5px;">
+                        <path d="M9.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M6 5.5l-4.535-.442A.531.531 0 0 1 1.531 4H14.47a.531.531 0 0 1 .066 1.058L10 5.5V9l.452 6.42a.535.535 0 0 1-1.053.174L8.243 9.97c-.064-.252-.422-.252-.486 0l-1.156 5.624a.535.535 0 0 1-1.053-.174L6 9z"></path>
+                    </svg><a class="px-3" href="#">Bibliothèque</a><a class="pe-3" href="#">Wikip8</a><a href="#">Espace perso</a></div>
+                <div class="d-flex justify-content-center" id="right-header">
+                    <div class="px-2 pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter-x">
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"></path>
+                        </svg></div>
+                    <div class="px-2 pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+                        </svg></div>
+                    <div class="px-2 pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-linkedin">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"></path>
+                        </svg></div>
+                    <div class="px-2 pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram" style="font-size: 17px;">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                        </svg></div>
+                    <div class="px-2 pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-vimeo">
+                            <path d="M15.992 4.204c-.071 1.556-1.158 3.687-3.262 6.393-2.175 2.829-4.016 4.243-5.522 4.243-.933 0-1.722-.861-2.367-2.583L3.55 7.523C3.07 5.8 2.556 4.94 2.007 4.94c-.118 0-.537.253-1.254.754L0 4.724a209.56 209.56 0 0 0 2.334-2.081c1.054-.91 1.845-1.388 2.373-1.437 1.243-.123 2.01.728 2.298 2.553.31 1.968.526 3.19.646 3.666.36 1.631.756 2.446 1.186 2.445.334 0 .836-.53 1.508-1.587.671-1.058 1.03-1.863 1.077-2.415.096-.913-.263-1.37-1.077-1.37a3.022 3.022 0 0 0-1.185.261c.789-2.573 2.291-3.825 4.508-3.756 1.644.05 2.419 1.117 2.324 3.2z"></path>
                         </svg></div>
                 </div>
             </div>
         </div>
-    </div>
-    <header>
-        <div style="width: 100%;height: 4em;">
-            <div style="width: 100%;height: 3em;background: #dddddd;"></div>
-            <div style="height: 1em;background: linear-gradient(135deg, #dddddd 0%, #dddddd 50%, rgba(255,255,255, 1) 50%, rgb(255,255,255, 1) 100%), var(--bs-body-bg);"></div>
-        </div>
     </header>
     <main class="flex-shrink-0">
-        <div class="container-fluid">
-            <div style="padding-left: 3.8em;"><img class="img-fluid" src="assets/img/ied_logo.jpg" width="300"></div>
-        </div>
-        <div class="container-fluid">
-            <div class="d-flex justify-content-center" id="heading-slider" style="background: #c01616;">
-                <h2 class="px-3 py-1" style="color: var(--bs-body-bg);">Actualités &amp; évènements</h2>
+        <div>
+            <div class="d-flex justify-content-center rounded" id="heading-slider" style="background: #c01616;">
+                <h2 class="px-3 py-1" style="color: var(--bs-body-bg);">Évènements</h2>
                 <div></div>
             </div>
-            <div style="padding-left: 3.8em;">
-                <div class="simple-slider" style="width: 100%;">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div data-bss-hover-animate="pulse" class="swiper-slide" style="background: url(&quot;assets/img/bg.jpg&quot;) center center / cover no-repeat;">
-                                <div class="d-flex flex-column justify-content-center align-items-center carousel-caption">
-                                    <h3 class="p-2" style="border-radius: 15px;background: #c01616;">Ouverture des candidatures IEJ</h3>
-                                    <p class="p-1" style="background: #333333;border-radius: 10px;">En savoir plus&nbsp;</p>
+            <div class="simple-slider" style="width: 100%;">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div data-bss-hover-animate="pulse" class="swiper-slide" style="background: url(&quot;assets/img/bup8-j1-aureliablanc-3220-scaled.jpg&quot;) center center / cover no-repeat; background-position: bottom;">
+                            <div class="d-flex flex-column justify-content-center align-items-center carousel-caption">
+                                <h3 class="p-2" style="border-radius: 15px;background: #c01616;font-family: Calibri;">Ouverture des candidatures IEJ</h3>
+                                <p class="p-1" style="background: #333333;border-radius: 10px;font-family: Calibri;">En savoir plus&nbsp;</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background: url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;) center center / cover no-repeat;"></div>
+                        <div class="swiper-slide" style="background: url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;) center center / cover no-repeat;"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid"></div>
+        <div class="container p-2" style="margin-top: 2em;">
+            <div>
+                <div class="p-3">
+                    <h2 style="font-family: Calibri;font-weight: bold;">Actualités à la une</h2>
+                    <hr class="w-25">
+                    <div class="row">
+                        <div class="col-md-4 d-block item fcard" id="fcard1-1" style="margin-top: 10px;margin-bottom: 10px;">
+                            <div class="p-1" style="border-radius: 10px;background: #f6f6f4;box-shadow: 5px 5px 10px 0px var(--bs-secondary-border-subtle);border-style: solid;border-color: #f6f6f6;">
+                                <div class="d-flex justify-content-center align-items-center" style="width: 68px;text-align: center;clip-path: polygon(0 10%,100% 0,100% 90%,0 100%);background: #2ecc71;position: absolute;border-style: solid;border-color: #2ecc71;border-radius: 10px;">
+                                    <h3><i class="fas fa-keyboard" style="padding: 5px;color: var(--bs-body-bg);"></i></h3>
+                                </div>
+                                <h3 style="font-family: Calibri;color: var(--bs-body-color);text-align: right;font-weight: bold;">Actualité 1</h3>
+                                <p style="color: var(--bs-body-color);margin-top: 2em;">Lorem ipsum dolor sit amet, consectetur adispicing elit. Aenean id purus ipsum, Aliquam ac orci eleifend, aliquet felis nec.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-block item fcard" id="fcard1-5" style="margin-top: 10px;margin-bottom: 10px;">
+                            <div class="p-1" style="background: #f6f6f6;box-shadow: 5px 5px 10px 0px var(--bs-secondary-border-subtle);border-radius: 10px;border-style: solid;border-color: #f6f6f6;">
+                                <div class="d-flex justify-content-center align-items-center" style="width: 68px;text-align: center;clip-path: polygon(0 10%,100% 0,100% 90%,0 100%);background: #ef8d1b;position: absolute;border-style: solid;border-color: #ef8d1b;border-radius: 10px;">
+                                    <h3><i class="fas fa-school" style="padding: 5px;color: var(--bs-body-bg);"></i></h3>
+                                </div>
+                                <h3 style="font-family: Calibri;color: var(--bs-body-color);text-align: right;font-weight: bold;">Actualité 2</h3>
+                                <p style="color: var(--bs-body-color);margin-top: 2em;">Lorem ipsum dolor sit amet, consectetur adispicing elit. Aenean id purus ipsum, Aliquam ac orci eleifend, aliquet felis nec.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-block item fcard" id="fcard1-4" style="margin-top: 10px;margin-bottom: 10px;">
+                            <div class="p-1" style="border-radius: 10px;background: #f6f6f6;box-shadow: 5px 5px 10px 0px var(--bs-secondary-border-subtle);border-style: solid;border-color: #f6f6f6;">
+                                <div class="d-flex justify-content-center align-items-center" style="width: 68px;text-align: center;clip-path: polygon(0 10%,100% 0,100% 90%,0 100%);background: #25cbf4;position: absolute;border-style: solid;border-color: #25cbf4;border-radius: 10px;">
+                                    <h3><i class="fas fa-book-dead" style="padding: 5px;color: var(--bs-body-bg);"></i></h3>
+                                </div>
+                                <h3 style="font-family: Calibri;color: var(--bs-body-color);text-align: right;font-weight: bold;">Actualité 3</h3>
+                                <p style="color: var(--bs-body-color);margin-top: 2em;">Lorem ipsum dolor sit amet, consectetur adispicing elit. Aenean id purus ipsum, Aliquam ac orci eleifend, aliquet felis nec.</p>
+                            </div>
+                        </div>
+                    </div><a class="text-decoration-none p-3" href="#" style="text-align: right;">
+                        <h4 style="font-family: Calibri;font-weight: bold;">Voir la liste des actualités</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="formations">
+            <div>
+                <div class="p-3">
+                    <div>
+                        <h2 style="font-family: Calibri;font-weight: bold;">Nos formations</h2>
+                    </div>
+                    <hr class="w-25">
+                    <div class="row d-flex flex-column flex-md-row flex-lg-row flex-xl-row flex-xxl-row py-2">
+                        <div class="col">
+                            <div class="p-2 formation-grades" style="background: #1e88e5;">
+                                <h3 style="color: var(--bs-body-bg);text-align: center;font-family: 'Calibri', serif;font-weight: bold;">Psychologie</h3>
+                                <div class="row">
+                                    <div class="col d-flex justify-content-evenly"><span class="badge" style="font-size: 15px;">Licence</span><span class="badge" style="font-size: 15px;">Master</span></div>
                                 </div>
                             </div>
-                            <div class="swiper-slide" style="background: url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;) center center / cover no-repeat;"></div>
-                            <div class="swiper-slide" style="background: url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;) center center / cover no-repeat;"></div>
                         </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                        <div class="col">
+                            <div class="p-2 formation-grades" style="background: #ef8d1b;">
+                                <h3 style="color: var(--bs-body-bg);text-align: center;font-family: 'Alumni Sans Inline One', serif;">Science de l'Éducation</h3>
+                                <div class="row">
+                                    <div class="col d-flex justify-content-evenly"><span class="badge" style="font-size: 15px;">Licence</span><span class="badge" style="font-size: 15px;">Master</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex flex-column flex-md-row flex-lg-row flex-xl-row flex-xxl-row py-2">
+                        <div class="col">
+                            <div class="p-2 formation-grades" style="background: #2ecc71;">
+                                <h3 style="color: var(--bs-body-bg);text-align: center;font-family: Calibri;font-weight: bold;">Informatique</h3>
+                                <div class="row">
+                                    <div class="col d-flex justify-content-evenly"><span class="badge" style="font-size: 15px;">Licence</span><span class="badge" style="font-size: 15px;">Master</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-2 formation-grades" style="background: #0be1fd;">
+                                <h3 style="color: var(--bs-body-bg);text-align: center;font-family: Calibri;font-weight: bold;">Droit</h3>
+                                <div class="row">
+                                    <div class="col d-flex justify-content-evenly"><span class="badge" style="font-size: 15px;">Licence</span><span class="badge" style="font-size: 15px;">Master</span><span class="badge" style="font-size: 15px;">DU Criminologie</span><span class="badge" style="font-size: 15px;">DIEJ</span></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid p-2">
-            <div style="width: 100%;height: 2em;">
-                <div style="height: 1em;background: linear-gradient(135deg, rgba(255,255,255, 1) 0%, rgba(255,255,255, 1) 50%, #c01616 50%, #c01616 100%), var(--bs-body-bg);"></div>
-                <div style="width: 100%;height: 1em;background: #dddddd;"></div>
+        <div class="container"></div>
+        <section class="py-5 bg-light">
+            <h1 class="text-center text-success" style="padding-top: 15px;padding-bottom: 15px;color: var(--bs-body-color)!important;">FAQ</h1>
+            <div class="container">
+                <div>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-1">Procédure d’Inscription</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-2">Tarifs &amp; Paiements</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-3">Stages &amp; Regroupements</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-4">Scolarité</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-5">Examens</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" role="tabpanel" id="tab-1">
+                            <section class="py-5 bg-light">
+                                <div class="row">
+                                    <div class="col">
+                                        <div id="faqlist-1" class="accordion accordion-flush">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-1">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-1" class="accordion-collapse collapse" data-bs-parent="#faqlist-1">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-2">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-2" class="accordion-collapse collapse" data-bs-parent="#faqlist-1">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-3">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-3" class="accordion-collapse collapse" data-bs-parent="#faqlist-1">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-4">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-4" class="accordion-collapse collapse" data-bs-parent="#faqlist-1">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-5">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-5" class="accordion-collapse collapse" data-bs-parent="#faqlist-1">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-2">
+                            <section class="py-5 bg-light">
+                                <div class="row">
+                                    <div class="col">
+                                        <div id="faqlist-2" class="accordion accordion-flush">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-6">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-6" class="accordion-collapse collapse" data-bs-parent="#faqlist-2">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-7">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-7" class="accordion-collapse collapse" data-bs-parent="#faqlist-2">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-8">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-8" class="accordion-collapse collapse" data-bs-parent="#faqlist-2">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-9">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-9" class="accordion-collapse collapse" data-bs-parent="#faqlist-2">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-10">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-10" class="accordion-collapse collapse" data-bs-parent="#faqlist-2">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-3">
+                            <section class="py-5 bg-light">
+                                <div class="row">
+                                    <div class="col">
+                                        <div id="faqlist-3" class="accordion accordion-flush">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-11">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-11" class="accordion-collapse collapse" data-bs-parent="#faqlist-3">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-12">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-12" class="accordion-collapse collapse" data-bs-parent="#faqlist-3">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-13">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-13" class="accordion-collapse collapse" data-bs-parent="#faqlist-3">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-14">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-14" class="accordion-collapse collapse" data-bs-parent="#faqlist-3">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-15">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-15" class="accordion-collapse collapse" data-bs-parent="#faqlist-3">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-4">
+                            <section class="py-5 bg-light">
+                                <div class="row">
+                                    <div class="col">
+                                        <div id="faqlist-4" class="accordion accordion-flush">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-16">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-16" class="accordion-collapse collapse" data-bs-parent="#faqlist-4">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-17">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-17" class="accordion-collapse collapse" data-bs-parent="#faqlist-4">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-19">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-18" class="accordion-collapse collapse" data-bs-parent="#faqlist-4">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-19">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-19" class="accordion-collapse collapse" data-bs-parent="#faqlist-4">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-20">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-20" class="accordion-collapse collapse" data-bs-parent="#faqlist-4">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-5">
+                            <section class="py-5 bg-light">
+                                <div class="row">
+                                    <div class="col">
+                                        <div id="faqlist-5" class="accordion accordion-flush">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-21">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-21" class="accordion-collapse collapse" data-bs-parent="#faqlist-5">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-22">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-22" class="accordion-collapse collapse" data-bs-parent="#faqlist-5">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-23">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-23" class="accordion-collapse collapse" data-bs-parent="#faqlist-5">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-24">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-24" class="accordion-collapse collapse" data-bs-parent="#faqlist-5">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-25">What is Lorem Ipsum?</button></h2>
+                                                <div id="content-accordion-25" class="accordion-collapse collapse" data-bs-parent="#faqlist-5">
+                                                    <p class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="d-flex justify-content-center" style="background: #dddddd;padding-left: 4em;color: var(--bs-body-bg);">
-                <p class="p-2" style="color: var(--bs-emphasis-color);">Cupcake ipsum dolor sit amet. Sweet jelly-o gingerbread cookie soufflé sugar plum sugar plum chocolate bar. Icing chocolate bar gummi bears halvah biscuit shortbread jelly beans dragée. Cookie lollipop tart soufflé tart chupa chups. Pudding biscuit jelly donut danish donut chupa chups sugar plum shortbread. Jelly beans cotton candy macaroon croissant tootsie roll candy. Sugar plum lollipop liquorice brownie chocolate jelly-o cheesecake pudding. Macaroon jelly beans ice cream cake caramels gingerbread gummies oat cake caramels. Gummi bears cake dessert apple pie cotton candy cotton candy caramels cheesecake macaroon. Topping caramels chupa chups macaroon sweet roll donut toffee.Cupcake caramels jujubes bear claw croissant sweet roll chocolate cake ice cream jelly beans. Apple pie candy gummi bears tootsie roll dessert icing. Sweet roll soufflé pie bear claw soufflé bear claw. Cheesecake bonbon candy canes sugar plum cake sweet roll. Powder tiramisu gummi bears dessert dragée croissant bonbon. Lemon drops donut cotton candy croissant candy danish.</p>
-            </div>
-            <div style="width: 100%;height: 2em;">
-                <div style="width: 100%;height: 1em;background: #dddddd;"></div>
-                <div style="height: 1em;background: linear-gradient(135deg, #c01616 0%, #c01616 50%, rgba(255,255,255, 1) 50%, rgb(255,255,255, 1) 100%), var(--bs-body-bg);"></div>
-            </div>
-        </div>
+        </section>
     </main>
     <footer class="footer mt-auto py-3" style="width: 100%;">
         <section id="top-footer" style="width: 100%;">
-            <div style="height: 1em;background: linear-gradient(135deg, rgba(255,255,255, 1) 0%, rgba(255,255,255, 1) 50%, #c01616 50%, #c01616 100%), var(--bs-body-bg);"></div>
+            <div style="height: 1em;background: linear-gradient(135deg, rgba(255,255,255, 1) 0%, rgba(255,255,255, 1) 50%, #333333 50%, #333333 100%, rgb(192,22,22) 100%), var(--bs-body-bg);"></div>
         </section>
-        <section class="d-flex justify-content-center align-items-center" id="bottom-footer" style="width: 100%;background: #c01616;padding-left: 5em;height: 100%;">
+        <section class="d-flex justify-content-center align-items-center" id="bottom-footer" style="width: 100%;background: #333333;height: 100%;">
             <section class="d-flex align-items-center p-2" id="left-footer" style="width: auto;height: auto;">
-                <div class="row">
+                <div class="row d-flex flex-column gx-3">
                     <div class="col">
-                        <h4><span style="color: rgb(255, 255, 255);">Les Liens Utiles</span></h4>
+                        <h3 style="text-align: center;font-family: Calibri;"><span style="color: rgb(255, 255, 255);">Les Liens Utiles</span></h3>
                         <hr class="w-50">
                         <div class="row">
                             <div class="col">
@@ -182,7 +434,7 @@
             <section class="d-flex justify-content-center align-items-center p-2" id="right-footer" style="width: 50%;">
                 <div class="row">
                     <div class="col">
-                        <h4><span style="color: rgb(255, 255, 255);">Institut d'Enseignement à Distance</span></h4>
+                        <h3 style="font-family: Calibri;"><span style="color: rgb(255, 255, 255);">Institut d'Enseignement à Distance</span></h3>
                         <hr class="w-50">
                         <p style="color: var(--bs-body-bg);"> Université Paris 8 - 2 rue de la Liberté - 93526 Saint-Denis cedex 02</p>
                         <p style="color: var(--bs-body-bg);"> Tel : +33(0)1 49 40 72 00 </p>
